@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="841.0" style="-fx-background-color: #b5a884;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="845.0" style="-fx-background-color: #b5a884;">
+         <children>
+            <Button layoutX="457.0" layoutY="393.0" mnemonicParsing="false" onAction="#onClickRegisterButton" prefHeight="31.0" prefWidth="216.0" style="-fx-background-color: #234622;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="760.0" fitWidth="395.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../lib/img/camera-8246764_960_720.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="msg" layoutX="471.0" layoutY="424.0" textFill="RED" />
+            <Label layoutX="31.0" layoutY="169.0" text="QUẢN LÝ KHO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="211.0" layoutY="236.0" text="MÁY ẢNH" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Hyperlink alignment="CENTER" layoutX="673.0" layoutY="393.0" onAction="#goblog" prefHeight="33.0" prefWidth="100.0" text="Báo lỗi" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Hyperlink>
+            <Pane layoutX="409.0" layoutY="12.0" prefHeight="161.0" prefWidth="427.0">
+               <children>
+                  <ImageView fitHeight="189.0" fitWidth="170.0" layoutX="122.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../lib/img/Black_and_White_Photography_Camera_Photo_Studio_Logo-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+            <Pane layoutX="457.0" layoutY="209.0" prefHeight="67.0" prefWidth="332.0" style="-fx-background-color: #234622;">
+               <children>
+                  <TextField fx:id="emailTF" layoutX="9.0" layoutY="14.0" prefHeight="40.0" prefWidth="315.0" promptText="Tên đăng nhập" />
+               </children>
+            </Pane>
+            <Pane layoutX="457.0" layoutY="310.0" prefHeight="67.0" prefWidth="332.0" style="-fx-background-color: #234622;">
+               <children>
+                  <PasswordField fx:id="fullnameTF" layoutX="9.0" layoutY="14.0" prefHeight="40.0" prefWidth="315.0" promptText="Mật khẩu" />
+               </children>
+            </Pane>
+            <Label layoutX="457.0" layoutY="282.0" text="Mật khẩu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="456.0" layoutY="174.0" text="Tài khoản" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
